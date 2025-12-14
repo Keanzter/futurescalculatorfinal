@@ -1,4 +1,3 @@
-Kean, [12/14/2025 5:51 PM]
 import { useState, useEffect } from 'react';
 
 export default function FuturesRiskCalculator() {
@@ -8,9 +7,9 @@ export default function FuturesRiskCalculator() {
   const [tickSize, setTickSize] = useState('');
   const [tickValue, setTickValue] = useState('');
   const [targetPrice, setTargetPrice] = useState('');
-  const [contracts, setContracts] = useState(null);
+  const [contracts, setContracts] = useState<any>(null);
   const [currentPage, setCurrentPage] = useState('home');
-  const [particles, setParticles] = useState([]);
+  const [particles, setParticles] = useState<any[]>([]);
 
   useEffect(() => {
     const newParticles = [];
@@ -117,7 +116,7 @@ export default function FuturesRiskCalculator() {
             <button 
               onClick={() => setCurrentPage('home')}
 
-Kean, [12/14/2025 5:51 PM]
+Kean, [12/14/2025 6:31 PM]
 className={`hover:text-white transition-colors ${currentPage === 'home' ? 'text-white' : 'text-gray-400'}`}
             >
               Home
@@ -201,7 +200,7 @@ className={`hover:text-white transition-colors ${currentPage === 'home' ? 'text-
                     onChange={(e) => setTickSize(e.target.value)}
                     step="0.00001"
 
-Kean, [12/14/2025 5:51 PM]
+Kean, [12/14/2025 6:31 PM]
 className="w-full bg-transparent border-b border-gray-800 py-2 text-xl focus:outline-none focus:border-white text-center"
                   />
                 </div>
@@ -280,14 +279,14 @@ className="w-full bg-transparent border-b border-gray-800 py-2 text-xl focus:out
             <div className="space-y-6">
               <div>
                 <h2 className="text-sm uppercase tracking-wider text-gray-500 mb-3">E-mini Contracts</h2>
-                <div className="border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl rounded-lg">
+                <div className="border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl rounded-lg overflow-hidden">
                   <div className="grid grid-cols-5 bg-gray-900 text-xs uppercase tracking-wider text-gray-400">
                     <div className="p-2 border-r border-gray-800">Instr.</div>
                     <div className="p-2 border-r border-gray-800">Description</div>
-                    <div className="p-2 border-r border-gray-800">Tick Size</div>
 
-Kean, [12/14/2025 5:51 PM]
-<div className="p-2 border-r border-gray-800">Tick Val</div>
+Kean, [12/14/2025 6:31 PM]
+<div className="p-2 border-r border-gray-800">Tick Size</div>
+                    <div className="p-2 border-r border-gray-800">Tick Val</div>
                     <div className="p-2">Point Val</div>
                   </div>
                   <div className="grid grid-cols-5 text-xs border-t border-gray-800">
@@ -340,7 +339,7 @@ Kean, [12/14/2025 5:51 PM]
                     <div className="p-2 text-indigo-400">$100.00</div>
                   </div>
 
-Kean, [12/14/2025 5:51 PM]
+Kean, [12/14/2025 6:31 PM]
 <div className="grid grid-cols-5 text-xs border-t border-gray-800">
                     <div className="p-2 border-r border-gray-800 text-teal-500">ZB</div>
                     <div className="p-2 border-r border-gray-800 text-teal-500">30-Yr T-Bond</div>
@@ -353,7 +352,7 @@ Kean, [12/14/2025 5:51 PM]
 
               <div>
                 <h2 className="text-sm uppercase tracking-wider text-gray-500 mb-3">Micro Contracts</h2>
-                <div className="border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl rounded-lg">
+                <div className="border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl rounded-lg overflow-hidden">
                   <div className="grid grid-cols-5 bg-gray-900 text-xs uppercase tracking-wider text-gray-400">
                     <div className="p-2 border-r border-gray-800">Instr.</div>
                     <div className="p-2 border-r border-gray-800">Description</div>
@@ -394,10 +393,10 @@ Kean, [12/14/2025 5:51 PM]
                     <div className="p-2 border-r border-gray-800 text-teal-400">Micro Euro</div>
                     <div className="p-2 border-r border-gray-800 text-teal-400">0.0001</div>
                     <div className="p-2 border-r border-gray-800 text-teal-400">$1.25</div>
-                    <div className="p-2 text-teal-400">$1.25</div>
 
-Kean, [12/14/2025 5:51 PM]
-</div>
+Kean, [12/14/2025 6:31 PM]
+<div className="p-2 text-teal-400">$1.25</div>
+                  </div>
                   <div className="grid grid-cols-5 text-xs border-t border-gray-800">
                     <div className="p-2 border-r border-gray-800 text-sky-400">MCL</div>
                     <div className="p-2 border-r border-gray-800 text-sky-400">Micro Crude</div>
