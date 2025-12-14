@@ -86,7 +86,7 @@ export default function FuturesRiskCalculator() {
             key={particle.id}
             className="absolute rounded-full bg-gray-400"
             style={{
-              left: ${particle.x}%,
+              left: `${particle.x}%`,
               top: ${particle.y}%,
               width: ${particle.size}px,
               height: ${particle.size}px,
@@ -460,4 +460,5 @@ Kean, [12/14/2025 6:31 PM]
     </div>
   );
 }
+
 
