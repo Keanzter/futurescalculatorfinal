@@ -115,8 +115,6 @@ export default function FuturesRiskCalculator() {
           <div className="flex gap-6 text-sm">
             <button 
               onClick={() => setCurrentPage('home')}
-
-Kean, [12/14/2025 6:31 PM]
 className={`hover:text-white transition-colors ${currentPage === 'home' ? 'text-white' : 'text-gray-400'}`}
             >
               Home
@@ -460,6 +458,7 @@ Kean, [12/14/2025 6:31 PM]
     </div>
   );
 }
+
 
 
 
