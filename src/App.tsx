@@ -87,12 +87,12 @@ export default function FuturesRiskCalculator() {
             className="absolute rounded-full bg-gray-400"
             style={{
               left: `${particle.x}%`,
-              top: ${particle.y}%,
-              width: ${particle.size}px,
-              height: ${particle.size}px,
+              top: `${particle.y}%`,
+              width: `${particle.size}px`,
+              height: `${particle.size}px`,
               opacity: 0.3,
-              animation: float ${particle.duration}s ease-in-out infinite,
-              animationDelay: ${particle.delay}s
+              animation: `float ${particle.duration}s ease-in-out infinite`,
+              animationDelay: `${particle.delay}s`
             }}
           />
         ))}
@@ -460,5 +460,6 @@ Kean, [12/14/2025 6:31 PM]
     </div>
   );
 }
+
 
 
