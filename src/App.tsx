@@ -34,7 +34,7 @@ export default function FuturesRiskCalculator() {
     const size = parseFloat(tickSize);
     const value = parseFloat(tickValue);
 
-    if (!risk  !entry  !stop  !size  !value) return;
+    if (!risk || !entry || !stop || !size || !value) return;
     if (entry === stop) return;
 
     const priceDiff = Math.abs(entry - stop);
@@ -460,3 +460,4 @@ Kean, [12/14/2025 6:31 PM]
     </div>
   );
 }
+
