@@ -198,7 +198,6 @@ className={`hover:text-white transition-colors ${currentPage === 'home' ? 'text-
                     onChange={(e) => setTickSize(e.target.value)}
                     step="0.00001"
 
-Kean, [12/14/2025 6:31 PM]
 className="w-full bg-transparent border-b border-gray-800 py-2 text-xl focus:outline-none focus:border-white text-center"
                   />
                 </div>
@@ -282,7 +281,7 @@ className="w-full bg-transparent border-b border-gray-800 py-2 text-xl focus:out
                     <div className="p-2 border-r border-gray-800">Instr.</div>
                     <div className="p-2 border-r border-gray-800">Description</div>
 
-Kean, [12/14/2025 6:31 PM]
+
 <div className="p-2 border-r border-gray-800">Tick Size</div>
                     <div className="p-2 border-r border-gray-800">Tick Val</div>
                     <div className="p-2">Point Val</div>
@@ -337,7 +336,6 @@ Kean, [12/14/2025 6:31 PM]
                     <div className="p-2 text-indigo-400">$100.00</div>
                   </div>
 
-Kean, [12/14/2025 6:31 PM]
 <div className="grid grid-cols-5 text-xs border-t border-gray-800">
                     <div className="p-2 border-r border-gray-800 text-teal-500">ZB</div>
                     <div className="p-2 border-r border-gray-800 text-teal-500">30-Yr T-Bond</div>
@@ -392,7 +390,7 @@ Kean, [12/14/2025 6:31 PM]
                     <div className="p-2 border-r border-gray-800 text-teal-400">0.0001</div>
                     <div className="p-2 border-r border-gray-800 text-teal-400">$1.25</div>
 
-Kean, [12/14/2025 6:31 PM]
+
 <div className="p-2 text-teal-400">$1.25</div>
                   </div>
                   <div className="grid grid-cols-5 text-xs border-t border-gray-800">
@@ -458,6 +456,7 @@ Kean, [12/14/2025 6:31 PM]
     </div>
   );
 }
+
 
 
 
